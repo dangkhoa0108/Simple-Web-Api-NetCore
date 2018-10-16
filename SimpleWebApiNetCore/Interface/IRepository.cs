@@ -9,5 +9,9 @@ namespace SimpleWebApiNetCore.Interface
         IQueryable<T> FindAll(params Expression<Func<T, object>>[] includeProperties);
         T FindById(K id, params Expression<Func<T, object>>[] includeProperties);
         void Remove(K id);
+
+        void Add(T entity);
+
+        void Update(T entity);
     }
 }

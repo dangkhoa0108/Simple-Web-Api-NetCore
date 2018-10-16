@@ -14,5 +14,9 @@ namespace SimpleWebApiNetCore.Service
         void Delete(int id);
 
         ProductCategory GetById(int id);
+
+        void Add(ProductCategory productCategory);
+
+        void Update(ProductCategory productCategory);
     }
 }

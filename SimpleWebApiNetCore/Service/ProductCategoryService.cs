@@ -34,5 +34,15 @@ namespace SimpleWebApiNetCore.Service
         {
             return _productCategoryRepository.FindById(id);
         }
+
+        public void Add(ProductCategory productCategory)
+        {
+            _productCategoryRepository.Add(productCategory);
+        }
+
+        public void Update(ProductCategory productCategory)
+        {
+            _productCategoryRepository.Update(productCategory);
+        }
     }
 }

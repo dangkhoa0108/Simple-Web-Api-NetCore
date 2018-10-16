@@ -38,5 +38,17 @@ namespace SimpleWebApiNetCore.Implementation
             _context.Set<T>().Remove(item);
             _context.SaveChanges();
         }
+
+        public void Add(T entity)
+        {
+            _context.Add(entity);
+            _context.SaveChanges();
+        }
+
+        public void Update(T entity)
+        {
+            _context.Set<T>().Update(entity);
+            _context.SaveChanges();
+        }
     }
 }
